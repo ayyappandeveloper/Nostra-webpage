@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    padding: 0 20px;
+    background-color: white;
+    height: auto;
+}
+
+/* Ad */
+.notify {
+
+    display: flex;
+    background-color: #1D232C;
+    color: white;
+    justify-content: center;
+    gap: 150px;
+    align-items: center;
+    padding: 4px;
+    top: 0;
+    transition: transform 0.4s ease;
+
+}
+
+.notify p {
+    font-size: 20px;
+}
+
+.notify i {
+    cursor: pointer;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    position: sticky;
+    z-index: 250000;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+
+}
+
+.navbar__menu {
+    display: flex;
+    gap: 50px;
+    font-size: 19px;
+
+
+}
+
+.navbar__menu a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar__menu a p {
+    font-size: 18px;
+}
+
+.humburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* humburger navbar*/
+.humburger-navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #1D232C;
+    position: fixed;
+    z-index: 400000;
+    top: 0;
+    left: -20%;
+    height: 100vh;
+    gap: 30px;
+    width: 20%;
+
+}
+
+.humburger-navbar i {
+    font-size: 20px;
+    margin-top: 15px;
+    align-self: end;
+    cursor: pointer;
+
+}
+
+.humburger-navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+
+}
+
+/* contact */
+.contact {
+    background-color: #1D232C;
+    border-radius: 10px;
+    align-items: center;
+    width: 80%;
+    margin: 90px auto 0px auto;
+}
+
+form {
+    padding: 60px;
+}
+
+.contact label {
+    color: white;
+    font-size: 20px;
+}
+
+.contact input {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border-radius: 7px;
+}
+
+#textarea {
+    display: block;
+    width: 100%;
+    padding: 40px;
+    border-radius: 7px;
+}
+
+.contact button {
+    margin-top: 20px;
+    background-color: #0056B3;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+
+/* Services one */
+.service {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-1 {
+    font-size: 22px;
+}
+
+.service-2 {
+    font-size: 15px;
+}
+
+/*services two */
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.service-box {
+    background-color: #F2F4F7;
+    padding: 8px;
+    border-radius: 10px;
+
+}
+
+.service-box i {
+    font-size: 35px;
+    margin-bottom: 10px;
+
+}
+
+.service-box h1,
+p {
+    font-size: 12px;
+}
+
+/* Subscribe */
+.subscribe {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.subscribe h1 {
+    font-size: 44px;
+}
+
+.subscribe p {
+    font-size: 30px;
+}
+
+.subscribe input {
+    margin-top: 10px;
+    padding: 15px;
+    width: 80%;
+    border: 2px solid #1D232C;
+}
+
+.subscribe-btn {
+    padding: 5px 15px;
+    margin-top: 20px;
+    background-color: #1D232C;
+    color: white;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+/* footer */
+.footer {
+    margin-top: 50px;
+    background-color: #1D232C;
+    padding: 30px;
+    color: #E2E1E1;
+}
+
+.footer h1 {
+    font-size: 50px;
+}
+
+.footer p {
+    font-size: 30px;
+}
+
+.footer-icons i {
+    margin-top: 10px;
+    font-size: 30px;
+    padding: 10px 40px;
+
+}
+
+.footer h4 {
+    margin-top: 10px;
+    font-size: 25px;
+    color: #E2E1E1;
+}
+
+/* Responsive */
+@media screen and (max-width:1000px) {
+    body {
+        font-size: 10px;
+    }
+
+    .humburger {
+        display: block;
+        font-size: 25px;
+    }
+
+    /* Navbar */
+    .navbar__menu {
+        display: none;
+
+    }
+
+
+}
+
+@media screen and (max-width:767px) {
+
+    /* notify */
+    .notify {
+        gap: 30px;
+    }
+
+    .notify p {
+        font-size: 10px;
+    }
+
+    /* subscribe */
+    .subscribe h1 {
+        font-size: 25px
+    }
+
+    .subscribe p {
+        font-size: 15px
+    }
+
+    .subscribe-btn {
+        font-size: 15px;
+    }
+
+    .subscribe-input {
+        padding: 18px;
+    }
+
+    /* footer */
+    .footer h1 {
+        font-size: 20px;
+    }
+
+    .footer p {
+        font-size: 17px;
+    }
+
+    .footer-icons i {
+        font-size: 19px;
+    }
+
+    .footer h4 {
+        font-size: 20px;
+    }
+}
